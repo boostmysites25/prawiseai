@@ -30,7 +30,7 @@ export { logo };
 // client details
 export const clientDetails = {
   phone: "+9100862952",
-  email: "hello@example.com",
+  email: "pkr@prawiseai.com",
   address: "1-19/3-7, SrinivasNagar, V.t.agraharam, Vizianagaram-545004,ANDHRA PRADESH",
 };
 
