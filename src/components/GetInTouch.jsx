@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { allServices, clientDetails } from "../constants";
 import { BiCaretRight } from "react-icons/bi";
 import { SpinnerContext } from "./SpinnerContext";
-import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
@@ -44,7 +43,6 @@ export const InquiryForm = () => {
   const [selectedService, setSelectedService] = useState(allServices[0].title);
   const dropdownRef = useRef(null);
   const { setSpinner } = useContext(SpinnerContext);
-  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -173,13 +171,13 @@ export const InquiryForm = () => {
                 className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none"
                 autoComplete="off"
                 placeholder="Enter your email"
-                {...register("email", {
-                  required: "Email is required",
-                  pattern: {
-                    value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-                    message: "Entered email is invalid",
-                  },
-                })}
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
+                  message: "Entered email is invalid",
+                },
+              })}
               />
               <p className="text-sm text-red-200">{errors.email?.message}</p>
             </div>

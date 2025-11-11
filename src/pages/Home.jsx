@@ -3,7 +3,6 @@ import Header from "../components/Website/Header";
 import Footer from "../components/Website/Footer";
 import aboutImg from "../assets/aboutus-3.webp";
 import aboutImg2 from "../assets/why-ai-matters.webp";
-import ceoImg from "../assets/ceo.jpg";
 import BrandLogos from "../components/BrandLogos";
 import Portfolio from "../components/Portfolio";
 import Testimonials from "../components/Testimonials";
