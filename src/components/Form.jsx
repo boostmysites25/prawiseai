@@ -2,6 +2,7 @@
 // import { BiCaretRight } from "react-icons/bi";
 
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { SpinnerContext } from "./SpinnerContext";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
@@ -9,6 +10,7 @@ import { clientDetails } from "../constants";
 
 const Form = () => {
   const { setSpinner } = useContext(SpinnerContext);
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -76,7 +78,7 @@ const Form = () => {
         } else {
           toast.success("Email sent successfully");
           reset();
-        //   navigate("/thank-you");
+          navigate("/thank-you");
         }
       })
       .catch((error) => {

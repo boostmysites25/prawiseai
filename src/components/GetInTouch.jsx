@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { allServices, clientDetails } from "../constants";
 import { BiCaretRight } from "react-icons/bi";
 import { SpinnerContext } from "./SpinnerContext";
@@ -43,6 +44,7 @@ export const InquiryForm = () => {
   const [selectedService, setSelectedService] = useState(allServices[0].title);
   const dropdownRef = useRef(null);
   const { setSpinner } = useContext(SpinnerContext);
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -111,7 +113,7 @@ export const InquiryForm = () => {
         } else {
           toast.success("Email sent successfully");
           reset();
-          // navigate("/thank-you");
+          navigate("/thank-you");
         }
       })
       .catch((error) => {

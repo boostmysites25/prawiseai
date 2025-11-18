@@ -28,6 +28,7 @@ const LandingPage = lazy(() => import("./pages/LandingPage/LandingPage"));
 const Industries = lazy(() => import("./pages/Industries"));
 const Blogs = lazy(() => import("./pages/Blogs"));
 const BlogsDetail = lazy(() => import("./pages/BlogsDetail"));
+const ThankYou = lazy(() => import("./pages/ThankYou"));
 
 Aos.init({
   once: true,
@@ -69,6 +70,7 @@ function App() {
                 path="/app-development"
                 element={<LandingPage page={"app-development"} />}
               />
+              <Route path="/thank-you" element={<ThankYou />} />
             </Routes>
           </NormalizeSlash>
         </Suspense>
