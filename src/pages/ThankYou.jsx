@@ -1,7 +1,17 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { clientDetails } from "../constants";
 
 const ThankYou = () => {
+  useEffect(() => {
+    // Google Ads conversion tracking
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17718005907/Lry4CPGt2r4bEJOhzYBC'
+      });
+    }
+  }, []);
+
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#03030a] text-white">
       <div className="blurred-red-circle left-[-6rem] top-[-3rem] h-[18rem] w-[18rem] bg-secondary/30"></div>
