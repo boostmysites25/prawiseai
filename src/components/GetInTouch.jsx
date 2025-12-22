@@ -148,7 +148,7 @@ export const InquiryForm = () => {
               </label>
               <input
                 type="text"
-                className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none"
+                className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none z-10 relative"
                 autoComplete="off"
                 placeholder="Enter your name"
                 {...register("name", {
@@ -162,7 +162,7 @@ export const InquiryForm = () => {
                   },
                 })}
               />
-              <p className="text-sm text-red-200">{errors.name?.message}</p>
+              <p className="text-sm text-red-500">{errors.name?.message}</p>
             </div>
             <div className="">
               <label className="text-sm uppercase tracking-[0.2em] text-white/60">
@@ -170,7 +170,7 @@ export const InquiryForm = () => {
               </label>
               <input
                 type="email"
-                className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none"
+                className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none z-10 relative"
                 autoComplete="off"
                 placeholder="Enter your email"
               {...register("email", {
@@ -181,7 +181,7 @@ export const InquiryForm = () => {
                 },
               })}
               />
-              <p className="text-sm text-red-200">{errors.email?.message}</p>
+              <p className="text-sm text-red-500">{errors.email?.message}</p>
             </div>
           </div>
           <div className="grid lg:grid-cols-2 gap-3">
@@ -191,7 +191,7 @@ export const InquiryForm = () => {
               </label>
               <input
                 type="text"
-                className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none"
+                className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none z-10 relative"
                 placeholder="Enter subject"
                 {...register("subject", {
                   required: "Subject is required",
@@ -204,7 +204,7 @@ export const InquiryForm = () => {
                   },
                 })}
               />
-              <p className="text-sm text-red-200">{errors.subject?.message}</p>
+              <p className="text-sm text-red-500">{errors.subject?.message}</p>
             </div>
             <div className="">
               <label className="text-sm uppercase tracking-[0.2em] text-white/60">
@@ -212,7 +212,7 @@ export const InquiryForm = () => {
               </label>
               <input
                 type="tel"
-                className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none"
+                className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none z-10 relative"
                 autoComplete="off"
                 placeholder="Enter your phone number"
                 {...register("phone", {
@@ -223,7 +223,7 @@ export const InquiryForm = () => {
                   },
                 })}
               />
-              <p className="text-sm text-red-200">{errors.phone?.message}</p>
+              <p className="text-sm text-red-500">{errors.phone?.message}</p>
             </div>
           </div>
           <div className="flex flex-col relative" ref={dropdownRef}>
@@ -270,7 +270,7 @@ export const InquiryForm = () => {
               type="text"
               rows="4"
               placeholder="Tell us about your goals, timeline, and success metrics"
-              className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none"
+              className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-white/40 focus:border-white/40 focus:outline-none z-10 relative"
               autoComplete="off"
               {...register("message", {
                 required: "Message is required",
@@ -283,12 +283,12 @@ export const InquiryForm = () => {
                 },
               })}
             />
-            <p className="text-sm text-red-200">{errors.message?.message}</p>
+            <p className="text-sm text-red-500">{errors.message?.message}</p>
           </div>
           <button
             type="submit"
             disabled={isSubmitting}
-            className="mt-4 w-full rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#04040f] disabled:cursor-not-allowed disabled:opacity-60"
+            className="mt-4 w-full rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#04040f] disabled:cursor-not-allowed disabled:opacity-60 relative z-10"
           >
             Send Message
           </button>
