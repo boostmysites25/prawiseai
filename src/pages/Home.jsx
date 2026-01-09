@@ -119,7 +119,7 @@ const Home = () => {
               “Prawise AI exists to help visionary teams move faster with clarity. We partner deeply, listen intentionally, and build products that create advantage from day one. Let’s co-create the future you imagine.”
             </p>
             <p className="text-sm uppercase tracking-[0.3em] text-[#04040f]/60">
-              — Praveen Sharma, Founder & CEO
+              — Praveen Kumar, Founder & CEO
             </p>
           </div>
         </div>

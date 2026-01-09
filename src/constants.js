@@ -31,7 +31,7 @@ export { logo };
 export const clientDetails = {
   phone: "919100862952",
   email: "pkr@prawiseai.com",
-  address: "1-19/3-7, SrinivasNagar, V.t.agraharam, Vizianagaram-545004,ANDHRA PRADESH",
+  address: "Visakhapatnam, India",
 };
 
 // landing page header links
