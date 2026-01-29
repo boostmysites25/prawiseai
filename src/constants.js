@@ -177,6 +177,78 @@ export const appDevelopmentServices = [
   },
 ];
 
+// AI development services
+export const aiDevelopmentServices = [
+  {
+    id: 1,
+    title: "Generative AI Solutions",
+    icon: customWebIcon,
+    img: require("./assets/ai-development/generative-ai.png"),
+    description:
+      "Custom LLMs and generative models that automate content creation, code generation, and complex reasoning tasks.",
+  },
+  {
+    id: 2,
+    title: "Computer Vision Systems",
+    icon: customWebIcon,
+    img: require("./assets/ai-development/computer-vision.png"),
+    description:
+      "Intelligent visual inspection, facial recognition, and object detection systems for retail, security, and manufacturing.",
+  },
+  {
+    id: 3,
+    title: "Predictive Analytics Engines",
+    icon: customWebIcon,
+    img: require("./assets/ai-development/predictive-analytics.png"),
+    description:
+      "Forecast demand, churn, and market trends with precision using machine learning models trained on your historical data.",
+  },
+  {
+    id: 4,
+    title: "NLP & Chatbot Assistants",
+    icon: customWebIcon,
+    img: require("./assets/ai-development/nlp-chatbot.png"),
+    description:
+      "Conversational AI agents that handle customer support, internal queries, and workflow automation 24/7.",
+  },
+];
+
+// Data Analytics services
+export const dataAnalyticsServices = [
+  {
+    id: 1,
+    title: "Modern Data Stack Setup",
+    icon: customWebIcon,
+    img: require("./assets/data-analytics/modern-data-stack.png"),
+    description:
+      "Architecting scalable data warehouses (Snowflake, BigQuery) and ELT pipelines for real-time data availability.",
+  },
+  {
+    id: 2,
+    title: "Executive Dashboards",
+    icon: customWebIcon,
+    img: require("./assets/data-analytics/dashboards.png"),
+    description:
+      "Interactive Power BI and Tableau dashboards that turn complex datasets into clear, actionable business intelligence.",
+  },
+  {
+    id: 3,
+    title: "Data Governance & Quality",
+    icon: customWebIcon,
+    img: require("./assets/data-analytics/data-governance.png"),
+    description:
+      "Establishing frameworks to ensure your data is accurate, secure, and compliant with GDPR/CCPA regulations.",
+  },
+  {
+    id: 4,
+    title: "Marketing Analytics",
+    icon: customWebIcon,
+    img: require("./assets/data-analytics/marketing-analytics.png"),
+    description:
+      "Attribution modeling and customer segmentation to optimize ad spend and personalize user journeys.",
+  },
+];
+
 // all services
 export const allServices = [
   {
@@ -395,39 +467,33 @@ export const industriesCompanyServe = [
 export const webPortfolio = [
   {
     id: 1,
-    img: require("./assets/web_projects/1.webp"),
-    title: "LumenHQ",
-    category: "Web Experience",
+    img: require('./assets/web-development/5ghomes.webp'),
+    title: "5g Homes",
+    link: "https://5ghighspeedinternet.co",
   },
   {
     id: 2,
-    img: require("./assets/web_projects/2.webp"),
-    title: "OrbitPay",
-    category: "Web Experience",
+    img: require('./assets/web-development/cold-creekcap.webp'),
+    title: "Cold Creekcap",
+    link: "https://www.coldcreekcap.com",
   },
   {
     id: 3,
-    img: require("./assets/web_projects/3.webp"),
-    title: "Northstar Advisory",
-    category: "Web Platform",
+    img: require('./assets/web-development/think-reality.webp'),
+    title: "Think Reality",
+    link: "https://thinkrealty.ae",
   },
   {
     id: 4,
-    img: require("./assets/web_projects/4.webp"),
-    title: "Atlas Talent Cloud",
-    category: "SaaS Platform",
+    img: require('./assets/web-development/akash-mega-mart.webp'),
+    title: "Akash Mega Mart",
+    link: "https://akashmegamart.com/",
   },
   {
     id: 5,
-    img: require("./assets/web_projects/5.webp"),
-    title: "Beacon Workspace",
-    category: "Intranet Portal",
-  },
-  {
-    id: 6,
-    img: require("./assets/web_projects/6.webp"),
-    title: "VelvetStreet",
-    category: "Commerce",
+    img: require('./assets/web-development/midwam.webp'),
+    title: "Midwam – Immersive Experience Design Company",
+    link: "https://www.midwam.com/en/about",
   },
 ];
 
@@ -435,26 +501,32 @@ export const webPortfolio = [
 export const appPortfolio = [
   {
     id: 1,
-    img: require("./assets/app_projects/1.webp"),
-    title: "PulseGo",
-    category: "Mobile App",
+    img: require('./assets/app-development/akash_mega_mart-app.webp'),
+    title: "Akash Mega Mart Mobile App",
+    link: "https://play.google.com/store/apps/details?id=com.app.akash_mega_mart",
   },
   {
     id: 2,
-    img: require("./assets/app_projects/2.webp"),
-    title: "RouteMate",
-    category: "Mobile App",
+    img: require('./assets/app-development/feelit_app.webp'),
+    title: "FeelIt Mobile App",
+    link: "https://play.google.com/store/apps/details?id=com.feelit.feelit_app",
   },
   {
     id: 3,
-    img: require("./assets/app_projects/3.webp"),
-    title: "Artisan Lane",
-    category: "Mobile App",
+    img: require('./assets/app-development/klikomics.webp'),
+    title: "Klikomics Mobile App",
+    link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
   },
   {
     id: 4,
-    img: require("./assets/app_projects/4.webp"),
-    title: "Horizon Faith",
-    category: "Mobile App",
+    img: require('./assets/app-development/autosnap-app.webp'),
+    title: "AutoSnap Mobile App",
+    link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
+  },
+  {
+    id: 5,
+    img: require('./assets/app-development/rentop.webp'),
+    title: "Rentop Bike and Car",
+    link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
   },
 ];

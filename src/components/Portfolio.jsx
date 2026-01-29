@@ -53,9 +53,6 @@ const Portfolio = ({ page }) => {
                 <p className="text-sm uppercase tracking-[0.25em] text-[#04040f]/50">
                   Product strategy · Design · Build
                 </p>
-                <button className="w-fit rounded-full border border-[#04040f]/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#04040f] transition-all duration-200 group-hover:-translate-y-1 group-hover:border-primary group-hover:text-primary">
-                  View case study
-                </button>
               </div>
             </article>
           ))}

@@ -25,6 +25,8 @@ const ServicePageLayout = lazy(() =>
   import("./components/Website/ServicePageLayout")
 );
 const LandingPage = lazy(() => import("./pages/LandingPage/LandingPage"));
+const AIDevelopment = lazy(() => import("./pages/LandingPage/AIDevelopment"));
+const DataAnalytics = lazy(() => import("./pages/LandingPage/DataAnalytics"));
 const Industries = lazy(() => import("./pages/Industries"));
 const Blogs = lazy(() => import("./pages/Blogs"));
 const BlogsDetail = lazy(() => import("./pages/BlogsDetail"));
@@ -70,6 +72,8 @@ function App() {
                 path="/app-development"
                 element={<LandingPage page={"app-development"} />}
               />
+              <Route path="/ai-development" element={<AIDevelopment />} />
+              <Route path="/data-analytics" element={<DataAnalytics />} />
               <Route path="/thank-you" element={<ThankYou />} />
             </Routes>
           </NormalizeSlash>
